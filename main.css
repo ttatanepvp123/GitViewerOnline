@@ -1,0 +1,79 @@
+div .Welcome.ExempleUrl {
+    text-align: left;
+    background-color: rgb(192, 192, 192);
+    border-style: solid;
+    border-width: 2px;
+    border-color:  rgb(97, 97, 97);
+    padding: 15px;
+}
+
+.ERROR {
+    text-align: center;
+}
+
+.Welcome {
+    text-align: center;
+}
+
+img.Welcome.logo-page{
+    display: block;
+    width: 25%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 37.2%;
+    margin-right: auto;
+    text-align: center;
+}
+
+.widget-main {
+    margin: 100px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    border-style: solid;
+    /* padding: 10px; */
+    -webkit-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.widget-main-top {
+    background-color: rgb(167, 208, 224);
+    margin: 100px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    border-style: solid;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 1px;
+    border-bottom-width: 0.5px;
+    border-color: rgb(80, 99, 107);
+}
+
+p.FileListe {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr.FileListe {
+    margin: 0px;
+}
+
+div.FileListe{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+
+div.FileListe:hover{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(201, 201, 201);
+}
