@@ -21,6 +21,8 @@
                 echo $command.'<br>'.$output.'<br>';
             }
         ?>
+        <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline/AdminPannel';?>">
     </div>
+    <button class="AdminPannel Button">RETURN TO AdminPannel</button>
 </body>
 </html>
