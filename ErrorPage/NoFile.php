@@ -13,5 +13,9 @@
         le fichier que vous demandez n'existe pas ou le chemin est mal ortographer<br>
         the file you are requesting does not exist or the path is bad ortographer
     </p>
+    </p>
+    <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'];*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline'; ?>">
+        <button class="button-Error">Go To HomePage</button>
+    </a>
 </body>
 </html>

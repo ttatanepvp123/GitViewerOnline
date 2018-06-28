@@ -9,10 +9,13 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="ERROR">ERROR NoRepo</h1>
+    <h1 class="ERROR">ERROR : No Repository</h1>
     <p class="ERROR">
         le repo que vous avez demandée n'est pas valide<br>
         the repo you requested is not valid
     </p>
+    <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'];*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline'; ?>">
+        <button class="button-Error">Go To HomePage</button>
+    </a>
 </body>
 </html>
