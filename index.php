@@ -15,13 +15,13 @@ if (empty($_GET['Dir'])) {
     $dir = '/'.$dir;
 }
 if(is_dir("repo/".$Repo) == 0){
-    include("ErrorPage/NoRepo.html");
+    include("ErrorPage/NoRepo.php");
     exit();
 }
 $type = is_dir("repo/".$Repo.$dir);
 if ($type == 0) {
     if(is_file("repo/".$Repo.$dir) == 0) {
-        include("ErrorPage/NoFile.html");
+        include("ErrorPage/NoFile.php");
         exit();
     }
 }
