@@ -1,5 +1,6 @@
 <?php 
 $o = fopen("password.cfg","r");
+$l = fgets($o);
 $l = str_replace("\n", "", $l);
 $l = str_replace("\r", "", $l);
 if (md5($_POST['password']) == $l) {
