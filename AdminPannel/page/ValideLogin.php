@@ -7,8 +7,7 @@ if(!empty($include)) {
     if (password_verify($_POST['password'], $l)) {
         session_start();
         $_SESSION['Valide'] = TRUE;
-        //header('Location: http://'.$_SERVER['HTTP_HOST'].'/AdminPannel');
-        header('Location: http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline/AdminPannel');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].'/AdminPannel');
     } else {
         ?>
     <!DOCTYPE html>
@@ -23,7 +22,7 @@ if(!empty($include)) {
     <body>
         <h1 class="AdminPannel Error-MSG">PassWord UnValide</h1>
         <p class="AdminPannel Error-MSG">Your password is not Valide </p>
-        <a class="AdminPannel Error-link-button" href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline/AdminPannel';?>">
+        <a class="AdminPannel Error-link-button" href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';?>">
             <button class="AdminPannel button-Error">Go To login</button>
         </a>
     </body>

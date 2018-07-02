@@ -26,7 +26,7 @@ if(!empty($include)) {
             }
         }
         ?>
-        <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline/AdminPannel';?>">
+        <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';?>">
     </div>
     <button class="AdminPannel Button">RETURN TO AdminPannel</button>
 </body>
