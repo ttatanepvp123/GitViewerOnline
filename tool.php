@@ -34,6 +34,8 @@ function GetLangage($nom)
         return "BASH WINDOWS";
     } else if ($extension == "sh"){
         return "BASH UNIX";
+    } else if ($extension == "py"){
+        return "PYTHON";
     } else {
         return "unkown";
     }

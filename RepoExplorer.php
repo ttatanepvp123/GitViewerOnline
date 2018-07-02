@@ -26,7 +26,14 @@
             } else {
                 echo '<a href="http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'/'.$listFile[$i + 2].'">';
             }
-            echo '<p class="FileListe Language-'.GetLangage($listFile[$i + 2]).'">'.$listFile[$i + 2].'</p>';
+            echo '<p class="FileListe Language-'.GetLangage($listFile[$i + 2]).'">';
+            if (is_file("repo/".$Repo.$dir.'/'.$listFile[$i + 2])) {
+                echo '<img class="thumbnail-file" src="data/img/Black-File.png">';
+            } else if (is_dir("repo/".$Repo.$dir.'/'.$listFile[$i + 2])) {
+                echo '<img class="thumbnail-Folder" src="data/img/Black-Folder.png">';
+            }
+            echo $listFile[$i + 2];
+            echo '</p>';
             echo '</a>';
             echo '</div>';
             $tmp = true;

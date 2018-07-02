@@ -6,6 +6,13 @@ if (empty($_GET['Repo'])) {
 } else {
     $Repo = $_GET["Repo"];//GetRepo
     $Repo = str_replace('../', '', $Repo);//patch Exploit ../
+    if(empty($Repo)){
+        include("ErrorPage/NoRepo.php");
+        exit();
+    } else if ($Repo == '/') {
+        include("ErrorPage/NoRepo.php");
+        exit();
+    }
 }
 if (empty($_GET['Dir'])) {
     $dir = '/';
