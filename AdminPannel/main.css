@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Galada');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+body {
+    background-color: rgb(37, 37, 37);
+}
 
 .console-Theme {
     padding: 20px;
@@ -44,4 +47,25 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+}
+
+.input-text {
+    background-color: rgb(20, 20, 20);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
+}
+
+.input-submit {
+    background-color: rgb(20, 20, 20);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
+}
+
+.input-submit:hover {
+    background-color: rgb(54, 54, 54);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
 }

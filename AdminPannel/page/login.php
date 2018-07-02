@@ -1,3 +1,6 @@
+<?php
+if(!empty($include)) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,12 +9,14 @@
     <title>AdminPannel - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <form method="POST" action="?page=ValideLogin">
-        <input type="password" name="password">
-        <input type="submit">
+        <input class="input-text" type="password" name="password">
+        <input class="input-submit" type="submit">
     </form>
 </body>
 </html>
+<?php
+}
+?>

@@ -1,3 +1,6 @@
+<?php
+if(!empty($include)) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +14,7 @@
     <p>Result Command : <br></p>
     <div class="AdminPannel console-Theme">
         <?php
+        if(!empty($include)) {
             if(PHP_OS == "WINNT"){
                 $command = 'cd ../repo && md '.$_POST['Name-Repository'].' && cd '.$_POST['Name-Repository'].' && git init';
                 $output = shell_exec($command);
@@ -20,9 +24,13 @@
                 $output = shell_exec($command);
                 echo $command.'<br>'.$output.'<br>';
             }
+        }
         ?>
         <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'].'/AdminPannel';*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline/AdminPannel';?>">
     </div>
     <button class="AdminPannel Button">RETURN TO AdminPannel</button>
 </body>
 </html>
+<?php
+}
+?>
