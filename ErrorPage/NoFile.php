@@ -14,7 +14,7 @@
         the file you are requesting does not exist or the path is bad ortographer
     </p>
     </p>
-    <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'];*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline'; ?>">
+    <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>">
         <button class="button-Error">Go To HomePage</button>
     </a>
 </body>

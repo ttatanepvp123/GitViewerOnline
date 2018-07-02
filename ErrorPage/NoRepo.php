@@ -14,7 +14,7 @@
         le repo que vous avez demandée n'est pas valide<br>
         the repo you requested is not valid
     </p>
-    <a href="<?php /*echo 'http://'.$_SERVER['HTTP_HOST'];*/ echo 'http://'.$_SERVER['HTTP_HOST'].'/GitViewerOnline'; ?>">
+    <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>">
         <button class="button-Error">Go To HomePage</button>
     </a>
 </body>
