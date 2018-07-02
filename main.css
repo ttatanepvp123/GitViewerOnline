@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
 div .Welcome.ExempleUrl {
     text-align: left;
     background-color: rgb(192, 192, 192);
@@ -38,45 +42,46 @@ img.Welcome.logo-page{
     text-align: center;
 }
 
+a {
+    color: white;
+    vertical-align: baseline;
+}
+
+
 .widget-main {
+    padding: 10px;
     margin: 100px;
     margin-bottom: 20px;
-    margin-top: 0px;
-    border-style: solid;
-    /* padding: 10px; */
-    -webkit-border-bottom-right-radius: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -moz-border-radius-bottomleft: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
+    color: rgb(255, 255, 255);
 }
 
 .widget-main-top {
-    background-color: rgb(167, 208, 224);
+    color: rgb(255, 255, 255);
+    padding: 1px;
     margin: 100px;
-    margin-bottom: 0px;
     margin-top: 50px;
-    border-style: solid;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-width: 1px;
-    border-bottom-width: 0.5px;
-    border-color: rgb(80, 99, 107);
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 35px 5px rgba(0,0,0,1);
 }
 
 p.FileListe {
     margin: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    vertical-align: baseline;
 }
 
 hr.FileListe {
     margin: 0px;
+    border: none;
+    background-color: rgb(34, 34, 34);
+    padding: 1px;
 }
 
 div.FileListe{
@@ -89,4 +94,47 @@ div.FileListe:hover{
     margin: 0%;
     padding: 0%;
     background-color: rgb(201, 201, 201);
+}
+
+.input-text {
+    background-color: rgb(20, 20, 20);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
+}
+
+.input-submit {
+    background-color: rgb(20, 20, 20);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
+}
+
+.input-submit:hover {
+    background-color: rgb(54, 54, 54);
+    border-width: 1px;
+    border-color: black;
+    color: rgb(143, 143, 143);
+}
+
+.thumbnail-Folder {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 0%;
+    margin: auto;
+    vertical-align: baseline;
+}
+
+.thumbnail-file {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 0%;
+    margin: auto;
+    vertical-align: baseline;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #00000000;
 }
