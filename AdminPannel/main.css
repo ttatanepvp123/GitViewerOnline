@@ -50,6 +50,7 @@ body {
 }
 
 .input-text {
+    border: none;
     background-color: rgb(20, 20, 20);
     border-width: 1px;
     border-color: black;
@@ -57,6 +58,7 @@ body {
 }
 
 .input-submit {
+    border: none;
     background-color: rgb(20, 20, 20);
     border-width: 1px;
     border-color: black;

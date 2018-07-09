@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
+    <?php include("ModulPage/highBarr.php") ?>
     <div class="widget-main-top">
+        <img src="/data/img/Black-slash.png">
         <p><?php echo $Repo.$dir ?></p>
     </div>
     <div class="widget-main">

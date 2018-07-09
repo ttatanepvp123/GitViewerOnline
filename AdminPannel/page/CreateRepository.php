@@ -1,5 +1,8 @@
 <?php
 if(!empty($include)) {
+    $Repository = $_POST['Name-Repository'];
+    $Repository = str_replace(' ', '-', $Repository);
+    $Repository = str_replace('&&', '', $Repository);
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,11 +19,11 @@ if(!empty($include)) {
         <?php
         if(!empty($include)) {
             if(PHP_OS == "WINNT"){
-                $command = 'cd ../repo && md '.$_POST['Name-Repository'].' && cd '.$_POST['Name-Repository'].' && git init';
+                $command = 'cd ../repo && md "'.$Repository.'" && cd "'.$Repository.'" && git init';
                 $output = shell_exec($command);
                 echo $command.'<br>'.$output.'<br>';
             } else {
-                $command = 'cd ../repo && mkdir '.$_POST['Name-Repository'].' && cd '.$_POST['Name-Repository'].' && git init';
+                $command = 'cd ../repo && mkdir '.$Repository.' && cd "'.$Repository.'" && git init';
                 $output = shell_exec($command);
                 echo $command.'<br>'.$output.'<br>';
             }
